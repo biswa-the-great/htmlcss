@@ -18,6 +18,7 @@ html{
     display: flex;
     align-items: center;
     position: sticky;
+    justify-content: flex-start;
     top: 0px;
 }
 
@@ -35,12 +36,13 @@ html{
 
 /* Navigation Bar: Logo and Image */
 #logo{
-    margin: 10px 34px;
+    margin: 10px 34px;    
 }
 
 #logo img{
     height: 59px;
     margin: 3px 6px;
+    border-radius: 50%;
 }
 
 
@@ -62,11 +64,13 @@ html{
     padding: 3px 22px;
     border-radius: 20px;
     text-decoration: none;
+    transition: 0.4s ease-in-out;
 }
 
 #navbar ul li a:hover{
     color: black;
     background-color: white;
+
 }
 
 /* Home Section */
@@ -83,7 +87,7 @@ html{
     content: "";
     position: absolute;
     background: url('../bg1.jpg') no-repeat center center/cover;
-    height: 642px;
+    height: 730px;
     top:0px;
     left:0px;
     width: 100%;
@@ -104,6 +108,11 @@ html{
     font-family: 'Bree Serif', serif;
 }
 /* Services Section */
+
+#services-container{
+    padding: 7% 0;
+}
+
 #services{
     margin: 34px;
     display: flex;
@@ -184,6 +193,10 @@ html{
     padding: 0.5rem;
     border-radius: 9px;
     font-size: 1.1rem;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
 } 
 
 #contact-box form{
@@ -218,13 +231,19 @@ footer{
 
 .btn{
     padding: 6px 20px;
-    border: 2px solid white;
     background-color: brown;
     color: white;
     margin: 17px;
     font-size: 1.5rem;
     border-radius: 10px;
     cursor:pointer;
+    border: none;
+}
+
+.btn:hover{
+    background-color: white;
+    color: brown;
+    transition: 0.5s ease-in-out;
 }
 
 .center{
